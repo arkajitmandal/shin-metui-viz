@@ -1,0 +1,390 @@
+
+
+body {
+    margin:0px;
+}
+
+div {
+    position: relative;
+}
+
+img {
+    max-height: 100%;
+    display: block;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 13fr 1fr 2fr 0.4fr; 
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr; 
+    border-radius: 20px;
+}
+
+#footer {
+    background-color:#6c5ce7;
+    color: white;
+    text-align: right;
+    font-size: small;
+    font-family: 'Courier New', Courier Bold, monospace;  
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.2fr ; 
+    
+}
+
+#upPanel {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+}
+
+#upPanel > div {
+    cursor: pointer;
+}
+
+#affiliation {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr; 
+}
+
+
+#github {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+    background-color:#4c4679;
+}
+
+#author {
+    padding-right: 10px;
+}
+
+#author > a:hover, a:visited, a:link, a:active {
+    color: white;
+    text-decoration: none;
+    outline: none !important;
+}
+#viewer {
+    background-color:#34495e;
+}
+#panel {
+    background-color:#f1f2f6;
+    border-left: solid 5px;
+    border-left-color: #1c2935;
+    display: grid;
+    grid-template-rows: 1fr 5fr  ; 
+}
+#affiliation{
+    background-color:white;
+}
+#progressbar {
+        background-color:#f1f2f6;
+}
+
+.inactiveButton{
+    background-color: white;
+    background-blend-mode: luminosity;
+}
+.activeButton {
+    background-color: #f1f2f6;
+}
+
+textarea{
+    overflow: hidden;
+    word-wrap: break-word; 
+    outline: none;
+    resize: none; 
+    overflow-y: scroll; 
+    overflow-x: scroll;  
+    background-color:#e1e1e4;
+    position: absolute;
+    border:0px;
+    height: 90%;
+    width: 90%;
+    margin:5% 5% 5% 5%;
+    padding: 2%;
+    font-size: medium;
+    word-spacing: 1rem;
+    line-height: 1.6rem;
+}
+
+#lowPanel > div {
+    width: 100%; 
+    height:100%;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 15fr 1fr 1.5fr 0.6fr; 
+    }
+    #main {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 5fr 5fr; 
+        
+    }
+    #panel {
+        border-left: solid 0px;
+        grid-template-rows: auto  ;
+        grid-template-columns: 1fr 5fr; 
+    }
+
+    #githublink img {
+        max-height: 40%;
+    }
+    #upPanel {
+        display: grid;
+        grid-template-columns: auto  ;
+        grid-template-rows: repeat(4,1fr); 
+    }
+}
+
+@media (orientation: portrait) {
+    .wrapper{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 15fr 1fr 1.5fr 0.6fr; 
+    }
+    #main {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 5fr 5fr; 
+        
+    }
+    #panel {
+        border-left: solid 0px;
+        grid-template-rows: auto  ;
+        grid-template-columns: 1fr 5fr; 
+    }
+
+    #githublink img {
+        max-height: 40%;
+    }
+    #upPanel {
+        display: grid;
+        grid-template-columns: auto  ;
+        grid-template-rows: repeat(4,1fr); 
+    }
+}
+
+
+#button1{
+    background-image: url(assets/input.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#button2{
+    background-image: url(assets/mo.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#button3{
+    background-image: url(assets/settings.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+#button4{
+    background-image: url(assets/help.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#UofR{
+    background-image: url(assets/UofR.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+#huoGroup{
+    background-image: url(assets/huoGroup.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+#NSF{
+    background-image: url(assets/NSF.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#tab2 {
+    color: grey;
+    font-size: large;
+    grid-template-rows: 1fr 4fr; 
+}
+
+#tab1 {
+    font-family: 'Courier New', Courier Bold, monospace;  
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 5fr; 
+}
+
+#tab3 {
+    grid-template-columns: 0.1fr 1fr 0.1fr; 
+    grid-template-rows: repeat(10,1fr); 
+    font-size: small;
+}
+
+#tab2, #tab3, #tab4 {
+    font-family: 'Courier New', Courier Bold, monospace;  
+    position: absolute;
+    display: none;
+}
+input[type="file"] {
+    display: none;
+}
+
+#input {
+    padding: 5px;
+    margin-top:2rem;
+}
+
+.custom-file-upload {
+    font-size: medium;
+    margin-left:5% ;
+    background-color: rgb(224, 81, 93);
+    font-family: 'Courier New', Courier Bold, monospace;  
+    color: white;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: rgb(184, 68, 77);
+}
+
+
+
+
+.normalButton, .stopButton{
+    font-size: large;
+    margin:10% ;
+    font-family: 'Courier New', Courier Bold, monospace;  
+    color: white;
+    padding: 0.3rem;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+.normalButton {
+    background-color: rgb(81, 155, 224);
+    background-image: url(assets/play.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.stopButton {
+    background-color: rgb(224, 81, 93);
+    background-image: url(assets/stop.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.inactiveStart {
+    font-size: large;
+    margin:10% ;
+    font-family: 'Courier New', Courier Bold, monospace;  
+    color: white;
+    padding: 0.3rem;
+    cursor: pointer;
+    min-height: 40px;
+    background-color: rgb(167, 200, 231);
+    background-image: url(assets/play.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+.normalButton:hover {
+    background-color: rgb(61, 115, 165);
+}
+.stopButton:hover {
+    background-color: rgb(184, 68, 77);
+}
+
+li {
+ color:black;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+}
+
+#energyResults , #orbitalResult{
+    display: block;
+    overflow:scroll;
+}
+
+#orbitalResult{
+    display: none;
+}
+
+.red  {
+    color:#fa8181;
+    cursor: pointer;
+}
+
+#controlResults {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr; 
+    grid-template-rows: 0.5fr 1fr 0.1fr; 
+}
+
+#blankRow4 {
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+}
+
+select {
+    background: white;
+    outline: none;
+}
+
+#moType {
+    display: none;
+}
+
+.column {
+    grid-row-start: 1; 
+    grid-row-end: 11; 
+}
+.column#left{
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+}
+.column#right{
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+}
