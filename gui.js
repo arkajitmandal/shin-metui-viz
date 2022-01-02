@@ -105,7 +105,7 @@ function showatoms() {
         let cs = colorSize(xyz[0]);
         let rad = getRadius(xyz[0], atomRadius);
         //console.log((parseFloat(xyz[1])-X)*A);
-        showatom((parseFloat(xyz[1]) - X) * A, (parseFloat(xyz[2]) - Y) * A, (parseFloat(xyz[3]) - Z) * A, rad * 0.4, cs);
+        showatom((parseFloat(xyz[1]) - X) * A, (parseFloat(xyz[2]) - Y) * A, (parseFloat(xyz[3]) - Z) * A, rad * 0.7, cs);
     }
 }
 
