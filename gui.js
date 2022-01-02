@@ -103,7 +103,7 @@ function showatoms() {
     for (var i = 0; i < xyzData.length; i++) {
         let xyz = xyzData[i].split(/(\s+)/).filter(function(e) { return e.trim().length > 0; });
         let cs = colorSize(xyz[0]);
-        let rad = getRadius(xyz[0], atomRadius);
+        let rad = getRadius(xyz[0], atomRadius * 0.3);
         //console.log((parseFloat(xyz[1])-X)*A);
         showatom((parseFloat(xyz[1]) - X) * A, (parseFloat(xyz[2]) - Y) * A, (parseFloat(xyz[3]) - Z) * A, rad * 2, cs);
     }
