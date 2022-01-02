@@ -169,8 +169,8 @@ D 4 0 0</textarea>
                     }
                     fname = document.querySelector('input[type=file]').files[0].name;
                     fname = fname.slice(fname.indexOf("-")+1,fname.indexOf(".txt"));
-                    let A = 0.529
-                    let xyzText = "H " + fname * A + " 0 0\nA -2.5 0 0\nD 2.5 0 0";
+                    //let A = 0.529
+                    let xyzText = "H 0 0 0\nA -2.5 0 0\nD 2.5 0 0";
                     document.getElementById("xyzText").value = xyzText;
 
                     //let xyzText = filelines.slice(2, 2 + N).join("\n");
